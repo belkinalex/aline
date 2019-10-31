@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body class="container">
+<p class="lead">books app</p>
+
+<ul>
+  <li>GET /books - get list of all books</li>
+  <li>POST /books - create book<br>
+  Example:<br>
+    <i>{"title":"First test book", "date":"2001-01-01", "author": "First test author", "description":"Best first test book", "image":"test_book1.jpg"}</i><br>
+  Response:<br>
+    <i>{<br>
+    "id": 41<br>
+      }</i><br>
+  </li>
+  <li>PATCH /books - modify book by id<br>
+    Example:<br>
+    <i>{"id": 31, "date":"2000-01-01", "title":"AAAA test book", "author": "AAAA test author", "description":"AAAAA first test book", "image":"AAA_book1.jpg"}</i><br>
+    Response:<br>
+    <i>{<br>
+    "id": 31,<br>
+    "title": "AAAA test book",<br>
+    "date": "1999-12-31T22:00:00.000Z",<br>
+    "author": "AAAA test author",<br>
+    "description": "AAAAA first test book",<br>
+    "image": "AAA_book1.jpg"<br>
+      }</i><br>
+  </li>
+</ul>
+
+</body>
+</html>
